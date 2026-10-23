@@ -1,6 +1,6 @@
 /* ===== Global Config ===== */
 // Base URL of the Java backend (Tomcat). Change this if deployed elsewhere.
-const API_BASE = "http://localhost:8081/eventportal/api";
+const API_BASE = "https://event-management-portal-xyy9.onrender.com";
 
 /* ===== Footer (shared across all pages) ===== */
 const FOOTER_HTML = `
