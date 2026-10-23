@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - NIET Event Management Portal</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="admin-topbar">
+  <div class="logo-group">
+    <img src="assets/logo.png" alt="NIET Logo" onerror="this.src='https://nehrucolleges.org/assets/favicon-256.png'">
+    <div>
+      <h1>NIET Admin Dashboard</h1>
+      <span>Event Management Portal</span>
+    </div>
+  </div>
+  <div>
+    <span id="adminWelcome" style="margin-right:16px;color:var(--text-light);"></span>
+    <button class="btn btn-outline btn-sm" id="logoutBtn">Logout</button>
+  </div>
+</div>
+
+<div class="admin-layout">
+  <div class="admin-sidebar">
+    <button class="active" data-panel="addEvent">➕ Add Event</button>
+    <button data-panel="manageEvents">🗑️ Manage Events</button>
+    <button data-panel="viewRegs">👥 Registered Students</button>
+  </div>
+
+  <div class="admin-content">
+
+    <!-- Add Event -->
+    <div class="admin-panel active" id="panel-addEvent">
+      <h2 class="section-title" style="text-align:left;">Add New Event</h2>
+      <form id="addEventForm" style="max-width:520px;">
+        <div class="form-group">
+          <label>Event Name</label>
+          <input type="text" id="evName" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="evDesc" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Event Date</label>
+          <input type="date" id="evDate" required>
+        </div>
+        <div class="form-group">
+          <label>Venue</label>
+          <input type="text" id="evVenue" required>
+        </div>
+        <div class="form-group">
+          <label>Image URL (optional)</label>
+          <input type="url" id="evImage" placeholder="https://...">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Event</button>
+        <div class="form-msg" id="addEventMsg"></div>
+      </form>
+    </div>
+
+    <!-- Manage Events -->
+    <div class="admin-panel" id="panel-manageEvents">
+      <h2 class="section-title" style="text-align:left;">Manage Events</h2>
+      <table class="admin-table" id="manageTable">
+        <thead>
+          <tr><th>Name</th><th>Date</th><th>Venue</th><th>Action</th></tr>
+        </thead>
+        <tbody id="manageTableBody">
+          <tr><td colspan="4">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- View Registrations -->
+    <div class="admin-panel" id="panel-viewRegs">
+      <h2 class="section-title" style="text-align:left;">Registered Students</h2>
+      <div class="select-inline">
+        <select id="regEventSelect"><option value="">Select an event</option></select>
+        <button class="btn btn-primary btn-sm" id="loadRegsBtn">Load</button>
+      </div>
+      <table class="admin-table" id="regsTable" style="display:none;">
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Phone</th><th>Department</th><th>Year</th></tr>
+        </thead>
+        <tbody id="regsTableBody"></tbody>
+      </table>
+      <p class="empty-state" id="regsEmptyMsg" style="display:none;">No students registered for this event yet.</p>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

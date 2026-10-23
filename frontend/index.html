@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIET Event Management Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo-group">
+      <img src="assets/logo.png" alt="NIET Logo" onerror="this.src='https://nehrucolleges.org/assets/favicon-256.png'">
+      <div>
+        <h1>NIET Event Management Portal</h1>
+        <span>Nehru Institute of Engineering &amp; Technology</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="admin-login.html">Admin</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== Hero Slider ===== -->
+<div class="slider" id="heroSlider">
+  <div class="slide active">
+    <img src="https://www.nehrucolleges.com/assets/ngi/images/avatar-x-stream/11.webp" alt="Annual Day">
+    <div class="slide-caption"><h2>Annual Day 2026</h2><p>Celebrating a year of achievements together</p></div>
+  </div>
+  <div class="slide">
+    <img src="https://nasccbe.ac.in/wp-content/uploads/2026/01/tamil-pongal-scaled.webp" alt="Pongal Celebration">
+    <div class="slide-caption"><h2>Pongal Celebration</h2><p>A festive gathering of harvest and joy</p></div>
+  </div>
+  <div class="slide">
+    <img src="https://happenings.lpu.in/wp-content/uploads/2024/10/smart-india-hackathon-3-scaled.jpg" alt="Tech Fest">
+    <div class="slide-caption"><h2>Tech Fest 2026</h2><p>Innovation, coding contests &amp; workshops</p></div>
+  </div>
+  <div class="slide">
+    <img src="https://pec.ac.in/sites/default/files/styles/event/public/headline/images/71-annual_athletic_meet_pec-day-2%2520%25281%2529.JPG?itok=0eAym67D" alt="Sports Meet">
+    <div class="slide-caption"><h2>Annual Sports Meet</h2><p>Where champions are made</p></div>
+  </div>
+  <div class="slider-dots" id="sliderDots"></div>
+</div>
+
+<!-- ===== About Us ===== -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-sub">Get to know our institution</p>
+    <div class="about-content">
+      <img src="https://microtec.in/storage/e55f8834-fb6d-43e4-a695-db9d3d8d4fcb/e55f8834-fb6d-43e4-a695-db9d3d8d4fcb-1606456790.jpg" alt="College Campus">
+      <div class="about-text">
+        <p>Nehru Institute of Engineering and Technology is a self-financing Engineering College, Approved by AICTE, New Delhi and Affiliated to Anna University Chennai, and Accredited by NAAC & NBA. 
+          NIET is established in the year 2006, under the able leadership of our Founder Chairman, Shri. P. K. Das is entering into its fifteenth successful year by marching ahead towards achieving the 
+          Vision and Mission of the Founder Chairman under the guidance of the most respected Managing Trustee Adv. Dr.P.Krishna Das, and the most beloved CEO and Secretary Dr.P.Krishna Kumar.</p>
+        <p>Our campus hosts a vibrant mix of cultural festivals, technical symposiums, sports meets and department events all year round, giving students a well-rounded college experience.</p>
+        <p>This portal helps students discover, register and keep track of every event happening on campus — all in one place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Upcoming Events Preview ===== -->
+<section style="background:#fff;">
+  <div class="container">
+    <h2 class="section-title">Upcoming Events</h2>
+    <p class="section-sub">Don't miss out — check what's happening next on campus</p>
+    <div class="event-grid" id="previewEventGrid">
+      <p style="text-align:center;color:var(--text-light);grid-column:1/-1;">Loading events...</p>
+    </div>
+    <div class="center-btn">
+      <a href="events.html" class="btn btn-primary">View All Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Us ===== -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-sub">We'd love to hear from you</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+        <h4>Phone</h4>
+        <p><a href="tel:+91 98765 43210">+91 98765 43210</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <h4>Email</h4>
+        <p><a href="mailto:niet.principal@gmail.com">niet.principal@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Address</h4>
+        <p>Nehru Gardens, Thirumalayampalayam, Coimbatore, Tamil Nadu – 641105</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer id="footer-placeholder"></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

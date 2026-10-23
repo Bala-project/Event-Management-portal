@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - NIET Event Management Portal</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo-group">
+      <img src="assets/logo.png" alt="NIET Logo" onerror="this.src='https://nehrucolleges.org/assets/favicon-256.png'">
+      <div>
+        <h1>NIET Event Management Portal</h1>
+        <span>Nehru Institute of Engineering &amp; Technology</span>
+      </div>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="admin-login.html">Admin</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Events</h2>
+    <p class="section-sub">Browse upcoming events or check what you've already registered for</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="upcoming">Upcoming Events</button>
+      <button class="tab-btn" data-tab="registered">Registered Events</button>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div class="tab-panel active" id="panel-upcoming">
+      <div class="event-grid" id="upcomingGrid">
+        <p style="text-align:center;color:var(--text-light);grid-column:1/-1;">Loading events...</p>
+      </div>
+    </div>
+
+    <!-- Registered Events -->
+    <div class="tab-panel" id="panel-registered">
+      <div class="lookup-box">
+        <input type="email" id="lookupEmail" placeholder="Enter your registered email address">
+        <button class="btn btn-primary" id="lookupBtn">Check</button>
+      </div>
+      <div id="registeredResults"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration Modal -->
+<div class="modal-overlay" id="regModal">
+  <div class="modal-box">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <h3 id="modalEventName">Register for Event</h3>
+    <form id="regForm">
+      <input type="hidden" id="regEventId">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="regName" required>
+      </div>
+      <div class="form-group">
+        <label>Email ID</label>
+        <input type="email" id="regEmail" required>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="regPhone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+      </div>
+      <div class="form-group">
+        <label>Department</label>
+        <select id="regDept" required>
+          <option value="">Select Department</option>
+          <option>CSE</option>
+          <option>IT</option>
+          <option>ECE</option>
+          <option>EEE</option>
+          <option>Mechanical</option>
+          <option>Civil</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Year of Study</label>
+        <select id="regYear" required>
+          <option value="">Select Year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Submit Registration</button>
+      <div class="form-msg" id="regMsg"></div>
+    </form>
+  </div>
+</div>
+
+<footer id="footer-placeholder"></footer>
+
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
