@@ -1,0 +1,15 @@
+com\niet\eventportal\model\Event.class
+com\niet\eventportal\config\DBConnection.class
+com\niet\eventportal\dao\RegistrationDAO.class
+com\niet\eventportal\servlet\AdminLoginServlet.class
+com\niet\eventportal\servlet\RegisteredEventsServlet.class
+com\niet\eventportal\servlet\AuthUtil.class
+com\niet\eventportal\dao\AdminDAO.class
+com\niet\eventportal\servlet\AdminRegistrationsServlet.class
+com\niet\eventportal\servlet\EventServlet.class
+com\niet\eventportal\model\Admin.class
+com\niet\eventportal\model\Registration.class
+com\niet\eventportal\util\ResponseUtil.class
+com\niet\eventportal\dao\EventDAO.class
+com\niet\eventportal\servlet\RegistrationServlet.class
+com\niet\eventportal\util\CORSFilter.class

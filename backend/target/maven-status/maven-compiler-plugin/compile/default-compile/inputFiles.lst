@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\config\DBConnection.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\dao\AdminDAO.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\dao\EventDAO.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\dao\RegistrationDAO.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\model\Admin.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\model\Event.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\model\Registration.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\AdminLoginServlet.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\AdminRegistrationsServlet.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\AuthUtil.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\EventServlet.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\RegisteredEventsServlet.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\servlet\RegistrationServlet.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\util\CORSFilter.java
+C:\Users\asus\Desktop\niet-event-portal\backend\src\main\java\com\niet\eventportal\util\ResponseUtil.java
