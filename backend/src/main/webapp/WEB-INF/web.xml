@@ -6,13 +6,7 @@
 
     <display-name>NIET Event Management Portal</display-name>
 
-    <!--
-      All servlets and the CORS filter are registered via annotations
-      (@WebServlet / @WebFilter) directly on their classes, so no
-      explicit <servlet> mappings are required here. This file is kept
-      for deployment metadata and can be extended with <error-page>,
-      <session-config>, etc. if needed.
-    -->
+   
 
     <session-config>
         <session-timeout>30</session-timeout>
