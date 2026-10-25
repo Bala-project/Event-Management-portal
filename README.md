@@ -3,7 +3,7 @@
 A full-stack college event management portal that allows students to browse and register for campus events, and allows administrators to manage events and view registrations.
 
 ## 🚀 Live Demo
-*   **Frontend:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app) *(Replace with your actual Vercel URL)*
+*   **Frontend:** [https://event-management-portal-frontend.vercel.app](https://event-management-portal-frontend.vercel.app)
 *   **Backend API:** [https://event-management-portal-xyy9.onrender.com/eventportal/api/events](https://event-management-portal-xyy9.onrender.com/eventportal/api/events)
 
 ## 🛠️ Tech Stack
@@ -47,6 +47,7 @@ niet-event-portal/
 │
 └── database/
     └── schema.sql            # MySQL Schema & Sample Data
+
 
 ## 💻 Local Setup Instructions
 
